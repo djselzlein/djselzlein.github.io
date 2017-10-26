@@ -89,7 +89,7 @@ disqus-shortname:
 
 # Use a complete url here, including http:// and such. Requiring just usernames
 # has been considered, but this is way more customizable.
-twitter:
+twitter: https://twitter.com/jason_selzlein
 youtube:
 instagram:
 tumblr:
@@ -98,8 +98,8 @@ google-plus:
 reddit:
 soundcloud:
 medium:
-linkedin:
-github:
+linkedin: https://www.linkedin.com/in/djeison-selzlein/
+github: https://github.com/selzlein
 behance:
 codepen:
 dribbble:
