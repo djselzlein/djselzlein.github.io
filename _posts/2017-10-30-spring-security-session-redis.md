@@ -167,3 +167,5 @@ Now the true gain we have with this environment is that if we stop our applicati
 In this article we saw how to configure Spring Session with Redis and have Spring Security integrated in this environment. All this allowed us to store users' sessions in Redis. Therefore, they are not lost when an application container goes down.
 
 Another benefit is that when using a centralized session storage it does not matter which application container handles a client request because any of them have accessed to session information.
+
+I hope it helps and feedback is always welcome! :)
