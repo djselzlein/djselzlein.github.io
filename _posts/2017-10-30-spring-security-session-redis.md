@@ -161,12 +161,12 @@ Log in as *admin/admin*. `IndexController` will be called and the session attrib
 
 Every time you refresh this page the `pageViews` session attribute gets incremented and updated in the session which in turn is stored in Redis. If user logs out and log in again a new session is created and the counter will start over.
 
-Now the true gain we have with this environment is that if we stop our application as start again user session will be intact. When the user hits refresh he will still be logged in and as one would expect, his `pageViews` attribute will continue to be incremented from where it was before the application was restarted.
+Now the true gain we have with this environment is that if we stop our application and start again user session will be intact. When the user hits refresh he will still be logged in and as one would expect, his `pageViews` attribute will continue to be incremented from where it was before the application was restarted.
 
 ## Conclusion
 
 In this article we saw how to configure Spring Session with Redis and have Spring Security integrated in this environment. All this allowed us to store users' sessions in Redis. Therefore, they are not lost when an application container goes down.
 
-Another benefit is that when using a centralized session storage it does not matter which application container handles a client request because any of them have accessed to session information.
+Another benefit is that when using a centralized session storage it does not matter which application container handles a client request because any of them have access to session information.
 
 I hope it helps and feedback is always welcome! :)
