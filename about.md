@@ -9,4 +9,4 @@ He has working experience with Java 8 and [Spring Framework](https://spring.io/)
 
 You can find him on [GitHub]({{ site.github }}), [LinkedIn]({{ site.linkedin }}) and [Twitter]({{ site.twitter }})
 
-[Contact](/contact) me if you have any questions or want to hire him!
+[Contact](/contact) him if you have any questions or want to hire him!
