@@ -3,6 +3,7 @@ layout: post
 title: Spring Security and Session with Redis
 date: '2017-10-30'
 summary: "In this article I will show how to externalize users' session information from application containers and store it on Redis using Spring projects."
+comments: true
 ---
 
 There was this product I was working on with my team where we wanted to achieve a multi-instance production environment. This would bring us several benefits like zero-downtime deploys, greater availability assurance and scalability in order to attend high demand peaks.
