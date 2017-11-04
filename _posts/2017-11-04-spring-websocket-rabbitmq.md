@@ -8,11 +8,11 @@ comments: true
 
 In this project I was working at, we had websockets implemented over the [STOMP protocol](https://stomp.github.io/). These websockets were currently maintained by our application container. Since we wanted to achieve a multi-instance production environment we would have to use a single message broker so messaging can reach any connected endpoint, not only the ones known by each application container.
 
-This is the second part in the process of externalizing state and responsabilities from application containers. [Here](/2017/10/30/spring-security-session-redis/) you can find the first part and the source code for this demo is on [GitHub](https://github.com/selzlein/spring-websockets-rabbitmq-demo).
+This is the second part in the process of externalizing state and responsibilities from application containers. [Here](/2017/10/30/spring-security-session-redis/) you can find the first part and the source code for this demo is on [GitHub](https://github.com/selzlein/spring-websockets-rabbitmq-demo).
 
 ## Problem
 
-Our application used websockets to send notifications to connected users. So far, so good. The thing is that we were using our application container message broker implementation and when running multiple application containers, notifications could obviously not reach all intended users because their connection might have been stablished with any application container, possibly not the with the one sending the message.
+Our application used websockets to send notifications to connected users. So far, so good. The thing is that we were using our application container message broker implementation and when running multiple application containers, notifications could obviously not reach all intended users because their connection might have been established with any application container, possibly not the with the one sending the message.
 
 ## Solution
 
@@ -106,7 +106,7 @@ public class MessagingController {
 
 ### Client
 
-We first add depedencies for establishing websocket connections in the client side. These are Sock.js and Stomp Javascript libraries:
+We first add dependencies for establishing websocket connections in the client side. These are Sock.js and Stomp Javascript libraries:
 
 {% highlight xml %}
 <dependency>
@@ -219,7 +219,7 @@ RabbitMQ is a message broker solution which supports multiple messaging protocol
 
 In order to run this demo, we have to install and run RabbitMQ first. It is possible to either [download and install](https://www.rabbitmq.com/download.html) it or run its [docker image](https://hub.docker.com/_/rabbitmq/).
 
-As we configured in `WebSocketConfig` class RabbitMQ is running with default config properties on `locahost:61613` and credentials are `guest/guest`.
+As we configured in `WebSocketConfig` class RabbitMQ is running with default config properties on `localhost:61613` and credentials are `guest/guest`.
 
 ## Play the result
 
