@@ -18,6 +18,8 @@ Our application used websockets to send notifications to connected users. So far
 
 [RabbitMQ](https://www.rabbitmq.com/) is a message broker software that can be integrated to the Spring ecosystem. In this scenario our application container receives websockets connections and relay them to RabbitMQ. This way all websockets are knowledgeable by any application container and can get notified.
 
+![Spring and RabbitMQ]({{ site.baseurl }}/img/spring-websocket-rabbitmq/spring_rabbitmq.png) <small>Source: [memorynotfound.com](https://goo.gl/images/G6WpPo)</small>
+
 We will implement this architecture in a demo "mural" app so connected users can post to every connected user to see.
 
 ### Spring WebSocket
@@ -227,11 +229,11 @@ Start our demo app by running `SpringWebsocketsRabbitmqDemoApplication` class. O
 
 Click *Connect* on both tabs and send messages from both sides. The sent messages will be delivered on all connected tabs including the one who sent it. The following screenshot represents a message sent and another received from a second connected tab:
 
-![Mural page](/img/spring-websocket-rabbitmq/major_tom.png "Mural page")
+![Mural page]({{ site.baseurl }}/img/spring-websocket-rabbitmq/major_tom.png)
 
 If you have RabbitMQ's management plugin enabled, you will be able to access `localhost:15672` and monitor connections:
 
-![STOMP Connections](/img/spring-websocket-rabbitmq/rabbitmq_connections.png "STOMP Connections")
+![STOMP Connections]({{ site.baseurl }}/img/spring-websocket-rabbitmq/rabbitmq_connections.png)
 
 Still in RabbitMQ's management interface you can check *Channels* and *Queues* tab. One queue gets created for each connected client, which is represented by a channel. Once a client disconnects both its queue and channel get removed.
 
