@@ -20,7 +20,7 @@ author:
   # want it.
   info:
 
-url: http://selzlein.github.io
+url: http://djselzlein.github.io
 baseurl: ""
 
 # language attribute in <html> element.
@@ -99,7 +99,7 @@ reddit:
 soundcloud:
 medium:
 linkedin: https://www.linkedin.com/in/djeison-selzlein/
-github: https://github.com/selzlein
+github: https://github.com/djselzlein
 behance:
 codepen:
 dribbble:
